@@ -7,12 +7,16 @@
     "test": "tests"
   },
   "dependencies": {
+    "@log4js-node/log4js-api": "^1.0.2",
     "celebrate": "^12.1.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^8.1.0"
+  },
   "scripts": {
-    "test": "mocha ./tests"
+    "test": "mocha ./tests --timeout 5000"
   },
   "repository": {
     "type": "git",
