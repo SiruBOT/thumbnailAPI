@@ -16,7 +16,7 @@
     "mocha": "^8.1.0"
   },
   "scripts": {
-    "test": "mocha ./tests --timeout 5000"
+    "test": "mocha ./tests --timeout 10000"
   },
   "repository": {
     "type": "git",
