@@ -6,10 +6,10 @@ class SoundCloudExtrator extends BaseExtractor {
     super('soundcloud')
     this.APP_SCRIPT_REGEX = /<script.*?src="(.*?)"/gi
     this.APP_SCRIPT_CLIENT_ID_REGEX = /,client_id:"(([a-zA-Z0-9-_]+))"/g
-    this.VALID_URL_REGEX = /(https?:\/\/|\b(?:[a-z\d]+\.))(?:(?:[^\s()<>]+|\((?:[^\s()<>]+|(?:\([^\s()<>]+\)))?\))+(?:\((?:[^\s()<>]+|(?:\(?:[^\s()<>]+\)))?\)|[^\s`!()\[\]{};:'".,<>?«»“”‘’]))?/
+    this.VALID_URL_REGEX = /(https?:\/\/|\b(?:[a-z\d]+\.))(?:(?:[^\s()<>]+|\((?:[^\s()<>]+|(?:\([^\s()<>]+\)))?\))+(?:\((?:[^\s()<>]+|(?:\(?:[^\s()<>]+\)))?\)|[^\s`!()[\]{};:'".,<>?«»“”‘’]))?/
     this.SC_URL = 'http://localhost/'
     this.SC_API_V2_BASE = 'https://api-v2.soundcloud.com/'
-    this.cache = new Cache({ ttl: 1000 })
+    this.cache = new Cache({ ttl: 60000 })
   }
 
   async parseClientID () {
