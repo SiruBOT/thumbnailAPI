@@ -1,8 +1,8 @@
 class Cache extends Map {
   /**
-     * @typedef {{ ttl: Number }} CacheOptions
-     * @param {CacheOptions} options - Cache Options
-     */
+   * @typedef {{ ttl: Number }} CacheOptions
+   * @param {CacheOptions} options - Cache Options
+   */
   constructor (options) {
     super()
     this.ttl = options.ttl
