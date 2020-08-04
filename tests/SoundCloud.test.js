@@ -12,11 +12,5 @@ describe('SoundCloudExtractor', () => {
         done()
       }).catch(done)
     })
-    describe('Others', () => {
-      it('Cache', (done) => {
-        if (SoundCloud.cache.size < 0) done(new Error('Cache TEST Failed'))
-        else done()
-      })
-    })
   })
 })
