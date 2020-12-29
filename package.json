@@ -13,10 +13,10 @@
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "mocha": "^8.1.0"
+    "jest": "^26.6.3"
   },
   "scripts": {
-    "test": "mocha ./tests --timeout 10000"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
