@@ -18,6 +18,10 @@
   "scripts": {
     "test": "jest"
   },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": ["lcovonly"]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SiruBOT/thumbnailAPI.git"
